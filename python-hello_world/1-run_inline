@@ -1,0 +1,2 @@
+#!/bin/bash
+pythion3 -c "$PYCODE" 
