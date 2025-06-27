@@ -1,2 +1,6 @@
 #!/usr/bin/python3
-print("".join("{:c}".format(i) for i in range(97, 123) if i not in (101, 113)), end="")
+for char_code in range(97, 123):
+    if char_code == 101 or char_code == 113:
+        continue
+    print(chr(char_code), end='')
+print()
