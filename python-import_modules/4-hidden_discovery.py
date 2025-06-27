@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-import sys
+import hidden_4
 
-total = 0
-for arg in sys.argv[1:]:
-    total += int(arg)
-print(total)
+if __name__ == "__main__":
+    names = dir(hidden_4)
+    for name in sorted(names):
+        if not name.startswith("__"):
+            print(name)
