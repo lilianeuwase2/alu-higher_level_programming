@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-import hidden_4
+import sys
 
-for name in sorted(dir(hidden_4)):
-    if not name.startswith("__"):
-        print(name)
+total = 0
+for arg in sys.argv[1:]:
+    total += int(arg)
+print(total)

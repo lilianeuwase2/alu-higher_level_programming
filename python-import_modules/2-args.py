@@ -1,15 +1,12 @@
 #!/usr/bin/python3
 import sys
 
-args = sys.argv[1:]
-count =i len(args)
-
-if count == 0:
+argc = len(sys.argv) - 1
+if argc == 0:
     print("0 arguments.")
-elif count == 1:
+elif argc == 1:
     print("1 argument:")
 else:
-    print("{} arguments:".format(count))
-
-for i, arg in enumerate(args, 1):
-    print("{}: {}".format(i, arg))
+    print("{:d} arguments:".format(argc))
+for i in range(1, argc + 1):
+    print("{:d}: {}".format(i, sys.argv[i]))
