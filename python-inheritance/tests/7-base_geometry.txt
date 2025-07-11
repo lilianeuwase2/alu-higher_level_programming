@@ -1,0 +1,35 @@
+Test cases for BaseGeometry class
+
+1. Test area() method:
+   - Create instance: bg = BaseGeometry()
+   - Call bg.area()
+   - Expected: Exception raised with message "area() is not implemented"
+
+2. Test integer_validator():
+   a) Valid positive integer:
+      - bg.integer_validator("valid", 5)
+      - Expected: No exception
+
+   b) Non-integer type (string):
+      - bg.integer_validator("name", "John")
+      - Expected: TypeError with message "name must be an integer"
+
+   c) Non-integer type (float):
+      - bg.integer_validator("age", 5.5)
+      - Expected: TypeError with message "age must be an integer"
+
+   d) Zero value:
+      - bg.integer_validator("age", 0)
+      - Expected: ValueError with message "age must be greater than 0"
+
+   e) Negative value:
+      - bg.integer_validator("distance", -5)
+      - Expected: ValueError with message "distance must be greater than 0"
+
+   f) Minimum valid value:
+      - bg.integer_validator("min", 1)
+      - Expected: No exception
+
+   g) Large valid value:
+      - bg.integer_validator("max", 1000000)
+      - Expected: No exception
