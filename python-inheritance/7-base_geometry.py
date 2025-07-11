@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 """BaseGeometry class with integer validation."""
 
+
 class BaseGeometry:
     """Base class for geometry operations."""
+    
     def area(self):
         """Raise an exception indicating area is not implemented."""
         raise Exception("area() is not implemented")
