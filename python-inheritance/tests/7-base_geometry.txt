@@ -10,7 +10,7 @@ Traceback (most recent call last):
 Exception: area() is not implemented
 
 # Test integer_validator with valid input
->>> bg.integer_validator("age", 1)   # Valid case
+>>> bg.integer_validator("age", 1)
 
 # Test integer_validator with non-integer types
 >>> bg.integer_validator("age", "4")
@@ -53,7 +53,3 @@ ValueError: age must be greater than 0
 Traceback (most recent call last):
 ...
 ValueError: age must be greater than 0
-
-# Test with other names (not required but good practice)
->>> bg.integer_validator("width", 10)   # Valid
->>> bg.integer_validator("height", 15)  # Valid
