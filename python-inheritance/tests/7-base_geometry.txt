@@ -56,4 +56,4 @@ ValueError: age must be greater than 0
 
 # Test with other names (not required but good practice)
 >>> bg.integer_validator("width", 10)   # Valid
->>> bg.integer_validator("height", 15)  # Valid-
+>>> bg.integer_validator("height", 15)  # Valid
