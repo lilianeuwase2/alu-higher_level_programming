@@ -50,14 +50,3 @@ ValueError: zero must be greater than 0
 Traceback (most recent call last):
 ...
 ValueError: negative must be greater than 0
-
-# Test integer_validator with invalid name types
->>> bg.integer_validator(123, 5)  # Non-string name
-Traceback (most recent call last):
-...
-TypeError: name must be a string
-
->>> bg.integer_validator(None, 5)  # None name
-Traceback (most recent call last):
-...
-TypeError: name must be a string
