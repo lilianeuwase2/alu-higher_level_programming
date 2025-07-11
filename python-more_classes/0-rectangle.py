@@ -1,6 +1,11 @@
 #!/usr/bin/python3
-"""Defines an empty Rectangle class."""
+"""
+This module defines an empty class Rectangle.
+"""
+
 
 class Rectangle:
-    """Represents a rectangle."""
-    pass
+        """
+            This class defines a rectangle.
+                """
+pass
