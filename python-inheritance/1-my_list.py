@@ -1,14 +1,16 @@
 #!/usr/bin/python3
-lookup = __import__('0-lookup').lookup
+"""
+This module defines a class MyList that inherits from list.
+"""
 
-class MyClass1(object):
-    pass
 
-class MyClass2(object):
-    my_attr1 = 3
-    def my_meth(self):
-        pass
+class MyList(list):
+    """
+    MyList class that inherits from list.
+    """
 
-print(lookup(MyClass1))
-print(lookup(MyClass2))
-print(lookup(int))
+    def print_sorted(self):
+        """
+        Prints the list in ascending order.
+        """
+        print(sorted(self))
