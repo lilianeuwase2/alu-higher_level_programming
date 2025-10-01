@@ -1,2 +1,1 @@
- #this repository all the activities done about pyhton-hello,world
-
+this is the readme file for the objects project
